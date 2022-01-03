@@ -37,5 +37,5 @@ const sdk = new ThirdwebSDK(
   }
 })()
 
-// We are exporting the initialized thirdweb SDK so that we can use it in our other scripts
+// We are exporting he initialized thirdweb SDK so that we can use it in our other scripts
 export default sdk;
