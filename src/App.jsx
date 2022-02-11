@@ -184,8 +184,10 @@ const App = () => {
   if (!address) {
     return (
       <div className="landing">
-        <h1>Welcome to NarutoDAO</h1>
-        <button onClick={() => connectWallet("injected")} className="btn-hero">
+        <h1 className="text-3xl text-left">🗡️ Welcome to  <br></br>
+        <span className="text-9xl bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">NarutoDAO</span>
+        </h1>
+        <button onClick={() => connectWallet("injected")} className="">
           Connect your wallet
         </button>
       </div>
@@ -197,8 +199,8 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className="member-page">
-        <h1>🍪DAO Member Page</h1>
-        <p>Congratulations on being a member</p>
+        <h1 className="text-6xl mb-4 bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">Zuko DAO Member Page</h1>
+        <p className="mb-5">Congratulations on being a member</p>
         <div>
           <div>
             <h2>Member List</h2>

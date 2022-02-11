@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body{
+    @apply bg-gradient-to-tl from-green-300 via-blue-500 to-purple-600
+  }
+  .landing{
+    @apply flex flex-col items-center
+  }
+}
+
 html,
 body {
+ 
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  /* background-color: #7700ee; */
   color: #fff;
   overflow-x: hidden;
 }
@@ -122,6 +137,8 @@ button {
   font-weight: bold;
   font-family: inherit;
   padding: 1.2rem 2rem;
+  width: 40%;
+  margin-top: 2rem;
   text-transform: uppercase;
   border-radius: 3rem;
   font-size: 1.2rem;
