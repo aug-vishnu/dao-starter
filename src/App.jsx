@@ -172,7 +172,7 @@ const App = () => {
   if (error instanceof UnsupportedChainIdError ) {
     return (
       <div className="unsupported-network">
-        <h2>Please connect to Rinkeby</h2>
+        <h2 className="text-6xl mb-4 bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">Please connect to Rinkeby</h2>
         <p>
           This dapp only works on the Rinkeby network, please switch networks
           in your connected wallet.
@@ -185,7 +185,7 @@ const App = () => {
     return (
       <div className="landing">
         <h1 className="text-3xl text-left">🗡️ Welcome to  <br></br>
-        <span className="text-9xl bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">NarutoDAO</span>
+        <span className="text-9xl bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">Zuk0 DAO</span>
         </h1>
         <button onClick={() => connectWallet("injected")} className="">
           Connect your wallet
@@ -199,12 +199,12 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className="member-page">
-        <h1 className="text-6xl mb-4 bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">Zuko DAO Member Page</h1>
+        <h1 className="text-6xl my-4 bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">Zuk0 DAO Member Page</h1>
         <p className="mb-5">Congratulations on being a member</p>
         <div>
           <div>
             <h2>Member List</h2>
-            <table className="card">
+            <table className="card drop-shadow-lg shadow" data-theme="dark">
               <thead>
                 <tr>
                   <th>Address</th>
@@ -313,11 +313,11 @@ const App = () => {
               }}
             >
               {proposals.map((proposal, index) => (
-                <div key={proposal.proposalId} className="card">
-                  <h5>{proposal.description}</h5>
-                  <div>
+                <div key={proposal.proposalId} className="card drop-shadow-lg">
+                  <h5 className="text-gray-800 text-base">{proposal.description}</h5>
+                  <div className="card">
                     {proposal.votes.map((vote) => (
-                      <div key={vote.type}>
+                      <div key={vote.type} >
                         <input
                           type="radio"
                           id={proposal.proposalId + "-" + vote.type}
@@ -355,7 +355,7 @@ const App = () => {
   // Render mint nft screen.
   return (
     <div className="mint-nft">
-      <h1>Mint your free 🍪DAO Membership NFT</h1>
+      <h1 className="text-6xl mb-4 bg-gradient-to-r from-rose-100 to-teal-100 bg-clip-text text-transparent font-bold">Mint your free 🍪DAO Membership NFT</h1>
       <button
         disabled={isClaiming}
         onClick={() => {

@@ -10,6 +10,9 @@
   .landing{
     @apply flex flex-col items-center
   }
+  .card{
+    @apply bg-gradient-to-r from-gray-100 to-gray-300
+  }
 }
 
 html,
@@ -108,7 +111,7 @@ h1 {
 
 .member-page form h5 {
   margin-top: 0;
-  color: #7700ee;
+  /* color: #7700ee; */
 }
 
 .member-page form .card > div {
@@ -126,7 +129,6 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   color: #000;
-  box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
 }
 
 button {
@@ -137,7 +139,6 @@ button {
   font-weight: bold;
   font-family: inherit;
   padding: 1.2rem 2rem;
-  width: 40%;
   margin-top: 2rem;
   text-transform: uppercase;
   border-radius: 3rem;

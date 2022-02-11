@@ -1,6 +1,12 @@
 module.exports = {
+  purge: {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+      options: {
+        safelist: [
+          /data-theme$/,
+        ]
+      },
+  },
   theme: {
     extend: {},
   },
